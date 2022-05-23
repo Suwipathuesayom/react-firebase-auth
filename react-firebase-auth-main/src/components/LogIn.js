@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { Redirect } from 'react-router-dom'
 import { AuthContext } from './Auth'
 import firebaseConfig from '../config'
+import '../css/LogIn.css'
 
 const LogIn = () => {
 
@@ -27,18 +28,18 @@ const LogIn = () => {
     return (
         <>
             <div className="container mt-5">
-            <h1>Log In</h1>
+            <h1>เข้าสู่ระบบ</h1>
             <form onSubmit={handleSubmit}>
             <div className="mb-3">
-                <label for="exampleInputEmail1" className="form-label">Email address</label>
+                <label for="exampleInputEmail1" className="form-label">กรุณากรอกอีเมลล์</label>
                 <input type="email" name="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
+                <div id="emailHelp" className="form-text">เราจะไม่เปิดเผยอีเมลของคุณกับคนอื่น.</div>
             </div>
             <div className="mb-3">
-                <label for="exampleInputPassword1" className="form-label">Password</label>
+                <label for="exampleInputPassword1" className="form-label">รหัสผ่าน</label>
                 <input type="password" name="password" className="form-control" id="exampleInputPassword1" />
             </div>
-            <button type="submit" className="btn btn-primary">Submit</button>
+            <button type="submit" className="btn btn-primary">เข้าสู่ระบบ</button>
             </form>
             </div>
         </>
